@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS</title>
+    <style>
+        /* ELEMENT SELECTOR */
+        div {
+            background-color: lightblue;
+            margin: auto;
+            width: 80vw;
+        }
+        /* CLASS SELECTOR */
+        .RED {
+            color: red;
+            background-color: black;
+        }
+        /* ID SELECTOR */
+        #uniqueDiv {
+            color: yellow;
+            background-color: green;
+        }
+        /* CHILD SELECTORS */
+        div > h2 {
+            color: blue;
+        }
+        /* DESCENDANT SELECTORS */
+        div a {
+            color: red;
+        }
+        /*UNIVERSAL SELECTOR */
+        * {
+            font-family: Arial, sans-serif;
+            padding: 0;
+            margin: 0;
+        }
+        /* PSEUDO SELECTOR */
+        a:hover {
+            color: green;
+        }
+        A:visited {
+            color: black;
+        }
+        A:active {
+            color: orange;
+        }
+        A:link {
+            color: purple;
+        }
+        P:first-child {
+            border: 2px solid white;
+        }
+        /* ATRIBUTE SELECTOR */
+        [data-X="A"] {
+            font-weight: bold;
+            color: pink;
+        }
+        .RED::before {
+            content: ">> ";
+        }
+        .RED::after {
+            content: " <<";
+        }
+        ::selection {
+            background: yellow;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="RED">
+        <article>
+            <h2>CSS EXAMPLES</h2>
+        </article>
+        <p data-X="A">This is a paragraph to demonstrate CSS styling.</p>
+        <a href="https://www.GOOGLE.com">Example Link</a>
+    </div>
+    <div>
+        <h2>Another Section</h2>
+    </div>
+    <div id="uniqueDiv">
+        <p>This div has a unique ID.</p>
+</body>
+</html>

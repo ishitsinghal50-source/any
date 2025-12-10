@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DESCRIPTION OF WEB PAGE USED TO RANK WEB PAGE -->
+    <meta name="Description" content="This is a learner webpage for HTML basics">
+    <meta name="Keywords" content="HTML, CSS, JavaScript, Web Development">
+
+    <title>learner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- HEADINGS -->
+    <h1>This is an H1 Heading</h1>
+    <h2>This is an H2 Heading</h2>
+    <h3>This is an H3 Heading</h3>
+    <h4>This is an H4 Heading</h4>
+    <h5>This is an H5 Heading</h5>
+    <h6>This is an H6 Heading</h6>
+
+    <!-- PARAGRAPHS -->
+    <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, adipisci voluptatem autem nihil voluptates
+        accusantium sed debitis modi? Repellat soluta, fugit dolore consequuntur mollitia dolorem voluptatum dolor ullam
+        magnam, laboriosam eius adipisci nulla doloribus?</P>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, adipisci voluptatem autem nihil voluptates
+        accusantium sed debitis modi? Repellat soluta, fugit dolore consequuntur mollitia dolorem voluptatum dolor ullam
+        magnam, laboriosam eius adipisci nulla doloribus?</p>
+
+    <!-- ANCHOR  -->
+    <a href="https://www.google.com">GOOGLE</a><BR>
+    <!-- FROM NEW TAB -->
+    IN NEW TAB <a href="https://www.google.com" target="_blank">GOOGLE</a>
+    <BR>
+
+    <!-- IMAGES -->
+    <img alt="IMAGE NOT FOUND" height=150PX src="submitted1.png">
+    <!-- TABLES -->
+    <table border="2">
+        <caption>PERSONAL DETAILS</caption>
+        <tr>
+            <!-- THEAD IS JUST FOR GROUPING THE DATA SIMIILAR WITH TBODY AND TFOOT -->
+            <thead>
+                <th>NAME</th>
+                <th>AGE</th>
+                <th>COUNTRY</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2">John</td>
+                <td>USA</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td rowspan="2">30</td>
+                <td>Canada</td>
+            </tr>
+            <tr>
+                <td>Lee</td>
+                <td>China</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">End of Details</td>
+        </tfoot>
+    </table>
+
+    <!-- LIST -->
+    <h3>Ordered List</h3>
+    <ol type="I">
+        <li>HTML</li>
+        <li>CSS
+            <ol type="i">
+                <li>CSS1</li>
+                <li>CSS2</li>
+                <li>CSS3</li>
+            </ol>
+        </li>
+        <li>JavaScript</li>
+    </ol>
+    <h3>Unordered List</h3>
+    <ul TYPE="circle">
+        <li>HTML</li>
+        <li>CSS
+            <ul TYPE="square">
+                <li>CSS1</li>
+                <li>CSS2</li>
+                <li>CSS3</li>
+            </ul>
+        </li>
+        <li>JavaScript</li>
+    </ul>
+    <h3>Description List</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+    </dl>
+
+    <!-- FORMS -->
+    <form action="/submit.php" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required
+            pattern="[a-zA-Z\s]+"><br><br><!-- REQUIRED AND PATTERN LIKE A TO Z a TO z AND THE \s IS FOR WHITESPACE -->
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required autofocus pattern="[a-zA-Z0-9@.]+"><br><br>
+        <!-- AUTOFOCUS AND PATTERN . AND @ AND OTHER ALPHABETS AND NUMBERS ARE ALLOWED -->
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <input type="checkbox" id="subscribe" name="subscribe" value="newsletter" required>
+        <!-- REQUIRED MAKE IT COMPLALACRY-->
+        <label for="subscribe"> Subscribe to newsletter</label><br><br>
+
+        <label for="comments">enter your comment:</label>
+        <br>
+        <textarea id="comments" name="comments" rows="4" cols="30" placeholder="Enter your comments here...">
+        </textarea><br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="" disabled selected>Select a country</option><!-- DEFAULT OPTION -->
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            <option value="uk">UK</option>
+            <option value="australia">Australia</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+
+
+    <!-- INLINE AND BLOCK ELEMENTS -->
+    <h3>INLINE AND BLOCK ELEMENTS</h3>
+    <p>This is a <b>block</b> element inside a paragraph.
+        <span style="color:blue;">This is an inline element.</span>
+        Here is another <i>block</i> element.
+    </p>
+
+    <!-- ID AND CLASSES -->
+    <DIv id="FIRSTDIV" class="RED YELLOW" data-createdby="ishit">This is a DIV with RED AND YELLOW class</DIv>
+    <div id="SECONDDIV" class="RED">ID MUST BE DIFFERENT BBUT CLASSES CAN BE SAME AND MULTIPLE</div>
+
+
+    <!-- VIDEO AND AUDIO AND SVG AND IFRAME-->
+    <video src="VIDEO.mp4" height="200PX" controls></video>
+    <!-- <video src="VIDEO.mp4" height="200PX" controls AUTOPLAY></video> --> <!-- PLAYS THE VIDEON AUTOMATICALLY-->
+    <!-- <video src="VIDEO.mp4" height="200PX" controls loop></video> --><!--PLAYS THE VIDEO IN LOOP-->
+    <!-- <video src="VIDEO.mp4" height="200PX" controls MUTED></video> --><!--MUTES THE VIDEO-->
+    <!-- <video src="VIDEO.mp4" height="200PX" controls poster="submitted1.png"></video> -->
+    <!--DISPLAYS THE IMAGE BEFORE PLAYING THE VIDEO-->
+    <audio src="AUDIO.mp3" controls></audio><!-- IT HAS AUTOPLAY,LOOP,MUTED-->
+
+    <SVG width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="red">
+        </circle>
+    </SVG>
+    <BR>
+
+    <iframe src="https://www.wikipedia.org" width="600" height="400" title="Wikipedia"></iframe>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/fhoDRB53DwY?si=bU5HOL4aOXvyOWpv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> --><BR>
+
+    <!-- SEMANTIC HTML -->
+    <a href="SEMANTICTAG.HTML" target="_blank">SEMANTIC TAG</a>
+
+    <!-- ENTITES AND CODE TAG AND MORE -->
+    <h3>HTML Entities</h3>
+    <p>Less than symbol: &lt;</p>
+    <p>Greater than symbol: &gt;</p>
+    <p>Ampersand symbol: &amp;</p>
+    <p>COPYRIGHT symbol:&COPY;</p>
+    <pre>
+        <p>This is a preformatted text block.
+        It preserves both spaces    
+        
+        and line breaks.
+        </p>
+    </pre>
+    CODING &nbsp;IS &nbsp;&nbsp;&nbsp;&nbsp;FUN<br>
+    <blockquote cite="https://www.wikipedia.com">
+        <p>This is a blockquote. It is used to indicate a section that is quoted from another source.</p>
+    </blockquote>
+    <PRE><code>
+&LT;!DOCTYPE html&GT;
+&LT;html lang="en"&GT;
+&LT;head&GT;
+    &LT;meta charset="UTF-8"&GT;
+    &LT;meta name="viewport" content="width=device-width, initial-scale=1.0"&GT;
+    &LT;title&GT;Document&LT;/title&GT;
+&LT;/head&GT;
+&LT;body&GT;
+    
+&LT;/body&GT;
+&LT;/html&GT;
+    </code></PRE>
+
+    <!-- CSS SELECTORS -->
+    <a href="SELECTORS.HTML" target="_blank"> CSS SELECTORS</a><BR>
+
+    <!-- CSS BOX MODEL -->
+    <a href="BOXMODEL.HTML" target="_blank">BOX MODEL</a><BR>
+
+    <!-- CSS FONTS,TEXT AND PROPERTIES -->
+    <a href="FONTS.HTML" target="_blank">FONTS AND TEXT</a><br>
+
+    <!-- CSS SPECIFICITY -->
+    <!-- WHAT IF MULTIPLE SELECTORS ARE CHANGING COLOR WHICH WILL BE PRIORITIZE??? -->
+    <!-- FOR SAME SELECTOR THE SELECTOR WHICH IS DEFINED LATER WILL BE APPLIED -->
+    <!-- FOR DIFFERENT SELECTOR THE DESC ORDER IS    INLINE,ID,CLASS OR ATTRIBUTE,ELEMENT,UNIVERSAL-->
+    <!-- BY TYPING '!IMPORTANT' IT OVERWRITES THE ABOVE STATEMENT-->
+
+    <!-- SIZES AND UNITS IN CSS -->
+    <!-- PX=PIXEL -->
+    <!-- VW=VIEW WIDTH(BTW 0-100) -->
+    <!-- VH=VIEW HEIGHT(BTW 0-100) -->
+    <!-- EM=MULTIPLIES THE VALUES OF PARENT BLOCK TO THE GIVEN NUMBER-->
+    <!--REM=MULTIPIES THE VALUE OF ROOT DEFNED(BY HTML) TO TH GIVEN NUMBER -->
+    <!-- VMIN AND VMAX=NO OF THE LEAST EITHER HEIGHT OF WIDTH FOR MIN AND VICE VERSA -->
+    <!-- MIN-HEIGHT SETS THE MINIMUM HEIGHT OF THE CONTAINER -->
+
+    <!-- CSS DISPLAY PROPERTIES -->
+    <a href="DISPLAY.HTML" target="_blank">DISPLAY PROPERTIES</a><BR>
+
+    <!-- SHADOWS AND OUTLINES -->
+    <a href="SHADOWS.HTML" target="_blank">SHADOWS AND OUTLINES</a><BR>
+
+    <!-- STYLING LISTS  -->
+    <a href="STYLINGLISTS.HTML" target="_blank">STYLING LISTS</a><BR>
+
+    <!-- CSS OVERFLOW -->
+    <a href="OVERFLOW.HTML" target="_blank">CSS OVERFLOW</a><BR>
+
+    <!-- CSS POSITION PROPERITIES -->
+    <a href="POSITION.HTML" target="_blank">CSS POSITION PROPERTIES</a><BR>
+
+    <!-- EXERCSE -->
+    <a href="EXERCISE.HTML" target="_blank">EXERCISE</a><BR>
+
+    <!-- CSS VARIABLES -->
+    <a href="VARIABLES.HTML" target="_blank">CSS VARIABLES</a><BR>
+
+    <!-- CSS MEDIA QUIERIES -->
+    <a href="MEDIAQUERIES.HTML" target="_blank">CSS MEDIA QUERIES</a><BR>
+
+    <!-- FLOAT AND CLEAR -->
+    <a href="FLOATCLEAR.HTML" target="_blank">FLOAT AND CLEAR</a><BR>
+
+    <!-- EXERCISE -->
+    <a href="EXERCISE2.HTML" target="_blank">EXERCISE 2</a><BR> 
+
+    <!-- FLEXBOX -->
+    <a href="FLEXBOX.HTML" target="_blank">FLEXBOX</a><BR>
+
+    <!-- GRID -->
+    <a href="GRID.HTML" target="_blank">CSS GRID</a><BR>
+    <a href="GRID1.HTML" target="_blank">CSS GRID 1</a><BR>
+
+    <!-- TRANSFORM -->
+    <a href="TRANSFORM.HTML" target="_blank">CSS TRANSFORM</a><BR>
+
+    <!-- TRANSITION -->
+    <a href="TRANSITION.HTML" target="_blank">CSS TRANSITION</a><BR>
+
+    <!-- ANIMATIONS -->
+    <a href="ANIMATIONS.HTML" target="_blank">CSS ANIMATIONS</a><BR>
+
+    <!-- OBJECT-FIT AND OBJECT-COVER -->
+     <A href="OBJECT-FIT.HTML" target="_blank">OBJECT-FIT</A><BR>
+
+    <!-- FILTERS -->
+     <A href="FILTERS.HTML" target="_blank" style="text-decoration: none;color: black;">FILTERS</A><BR>
+
+    <button id="btn">click me</button>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

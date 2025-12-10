@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOX MODEL</title>
+    <stylE>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .BOX{
+            background-color: RED;
+        }
+        .BOX1{
+            border: 10px solid BLACK;
+            padding: 20px;
+            margin: 30px;
+            box-sizing: border-box;
+            height: 100px;
+            width: 200px;
+        }
+        .BOX2{
+            border: 5px dashed BLUE;
+            padding: 15px;
+            margin: 25px;
+        }
+    </stylE>
+</head>
+<body>
+    <div class="BOX BOX1">
+        BOX1
+    </div>
+    <div class="BOX BOX2">
+        BOX2
+    </div>
+</body>
+</html>

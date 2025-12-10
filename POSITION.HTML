@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITION</title>
+    <STYle>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .BOX1{
+            position: sticky;
+            top: 0;
+            background-color: lightcoral;
+        }
+        .BOX2{
+            position: relative;/* Z-INDEX CAN BE SET SO WE CAN WHAT COME ABOVE OF WHAT*/
+            top: 20px;
+            left: 20px;
+            background-color: lightblue;
+        }
+        .BOX3{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-color: lightgreen;
+        }
+        .BOX4{
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: lightgoldenrodyellow;
+        }
+        .BOX5{
+            position: static;
+            background-color: lightpink;
+        }
+
+        .BOX{
+            width: 100px;
+            height: 100px;
+            border: 2px solid black;
+        }
+        .PARENT{
+            width: 500px;
+            padding: 30PX;
+            margin: 20px;
+            height: 500px;
+            border: 2px solid grey;
+            /* TRANSFORM,FILTER,OR PERSECTIVE PROPERTIES CAN ALSO MAKE AN ELEMENT APPEAR AS POSITIONED */
+            /* position: relative; */
+            /* transform: translate(0); */
+
+        }
+    </STYle>
+</head>
+<body>
+    <div class="PARENT">
+    <DIV class="BOX BOX1"></DIV>
+    <DIV class="BOX BOX2"></DIV>
+    <DIV class="BOX BOX3"></DIV>
+    <DIV class="BOX BOX4"></DIV>
+    <DIV class="BOX BOX5"></DIV>
+    </div>
+</body>
+</html>

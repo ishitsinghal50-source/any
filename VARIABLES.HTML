@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS VARIABLES</title>
+    <STyle>
+        :root{
+            --main-bg-color: coral;
+            --main-text-color: rgb(179, 22, 22);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        UL{
+            display: flex;
+        }
+        UL LI{
+            list-style: none;
+        }
+        UL LI:first-child{
+            --main-bg-color: lightblue;
+            background-color: var(--main-bg-color,BLUE);
+        }
+        DIV:first-child{
+            background-color: VAR(--main-bg-color);
+        }
+        .CONTAINER{
+            background-color: var(--main-text-color);
+        }
+    </STyle>
+</head>
+<body>
+    <DIV>
+        <UL>
+            <LI>HOME</LI>
+            <LI>ABOUT</LI>
+            <LI>CONTACT</LI>
+        </UL>
+    </DIV>
+    <DIV class="CONTAINER">
+        <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis adipisci earum qui dolores non perferendis iusto quos cumque beatae facere at molestiae reiciendis sunt, odio praesentium id nihil. Libero delectus magnam dolorem consequatur saepe ab distinctio ad cumque assumenda facilis similique ea, nisi dicta voluptas.</P>
+    </DIV>
+</body>
+</html>

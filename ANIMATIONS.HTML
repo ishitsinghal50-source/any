@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATIONS</title>
+    <STYle>
+        .CONTAINER{
+            background-color: rgb(0, 255, 247);
+            width: 500PX;
+            height: 500px;
+        }
+        .BOX{
+            width: 50px;
+            height: 50px;
+            /* animation-name: GGFUN;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: cubic-bezier(0, 1.11, 0.58, 1);
+            animation-delay: 1s;
+            animation-direction: alternate-reverse;
+            animation-play-state: paused;
+            animation-play-state: running;
+            animation-fill-mode: forwards; */
+            /* animation: NAME DURATION TIMING-FUNCTION DELAY ITERATION-COUNT DIRECTION FILL-MODE; */
+            animation: GGFUN 2s ease-in-out 1s 3 reverse forwards,
+                        GUN 2S ease-in-out 1s 6;
+            
+        }
+        @keyframes GGFUN{
+            from{
+                background-color: red;
+            }
+            to{
+                background-color: yellow;;
+            }
+        }
+        @keyframes GUN{
+            0%{
+                transform: rotateZ(0DEG);
+            }
+            50%{
+                transform: rotateZ(90DEG)
+            }
+            100%{
+                transform: rotateZ(270DEG)
+            }
+        }
+    </STYle>
+</head>
+<body>
+    <div class="CONTAINER">
+        <div class="BOX">
+
+        </div>
+    </div>
+</body>
+</html>

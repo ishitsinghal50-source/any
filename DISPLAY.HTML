@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DISPLAY PROPERTIES</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        .BOX {
+            display: inline;
+            border: 2px solid black;
+            padding: 23px;
+            margin: 10px;
+            width: 30vw;/*WIDTH WILL NOT WORK IN INLINE DISPLAY */
+        }
+        .BOX1{
+            display: inline-block;
+            border: 2px solid red;
+            padding: 23px;
+            margin: 10px;
+            width: 30vw;
+        }
+        .BOX2{
+            /* display: none; */
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <DIV class="BOX BOX2">
+        I M A BOX
+    </DIV>
+    <div class="BOX1">
+        ALSO A BOX
+    </div>
+    <span>
+        I M A SPAN
+    </span>
+    <span>
+        ALSO A SPAN
+    </span>
+</body>
+
+</html>

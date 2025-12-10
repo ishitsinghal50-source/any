@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <STYle>
+        .CONTAINER{
+            border: 2px solid RED;
+            display: flex;
+            height: 80VH;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-direction: row;
+            flex-wrap: wrap; 
+            align-content: normal;
+            row-gap: 30PX;
+            column-gap: 20PX;
+        }
+        .ITEM{
+            width: 40px;
+            height: 40px;
+            background-color: BLUE;
+        }
+        .ITEM1{
+            order: 3; /* CHANGES ORDER IN FLEXBOX */
+            flex-grow: 2; /* TAKES MORE SPACE */
+            flex-shrink: 2; /* SHRINKS MORE */
+            align-self: center;
+        }
+    </STYle>
+</head>
+<body>
+    <Main>
+        <DIv class="CONTAINER">
+            <div class="ITEM">1</div>
+            <div class="ITEM">2</div>
+            <div class="ITEM ITEM1">3</div>
+            <div class="ITEM">4</div>
+            <div class="ITEM">5</div>
+            <div class="ITEM">1</div>
+            <div class="ITEM">2</div>
+            <div class="ITEM">3</div>
+            <div class="ITEM">4</div>
+            <div class="ITEM">5</div>
+            <div class="ITEM">1</div>
+            <div class="ITEM">2</div>
+            <div class="ITEM">3</div>
+            <div class="ITEM">4</div>
+            <div class="ITEM">5</div>
+            <div class="ITEM">1</div>
+            <div class="ITEM">2</div>
+            <div class="ITEM">3</div>
+            <div class="ITEM">4</div>
+            <div class="ITEM">5</div>
+            
+        </DIv>
+    </Main>
+</body>
+</html>
