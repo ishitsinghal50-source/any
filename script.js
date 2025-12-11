@@ -236,50 +236,133 @@ else{
 //     console.log(a);
 // }).catch((err)=>{console.log(err)})
 
-let prom1 = new Promise((resolve, reject) => {
-    let r = Math.random()
-    if (r < 0.5) {
-        reject('no')
-    }
-    else {
-        setTimeout(() => {
-            console.log('done')
-            resolve('ok')
-        }, 3000);
-    }
-})
-let prom2 = new Promise((resolve, reject) => {
-    let b = Math.random()
-    if (b < 0.5) {
-        reject('no 2')
-    }
-    else {
-        setTimeout(() => {
-            console.log('done 2')
-            resolve('ok 2')
-        }, 2000);
-    }
-})
-// prom3 = Promise.all([prom1, prom2])
-// prom3=Promise.allSettled([prom1,prom2])
-// prom3=Promise.race([prom1,prom2])
-prom3=Promise.any([prom1,prom2])
-prom3.then((a) => {
-    console.log(a);
-}).catch((err) => { console.log(err) })
+// let prom1 = new Promise((resolve, reject) => {
+//     let r = Math.random()
+//     if (r < 0.5) {
+//         reject('no')
+//     }
+//     else {
+//         setTimeout(() => {
+//             console.log('done')
+//             resolve('ok')
+//         }, 3000);
+//     }
+// })
+// let prom2 = new Promise((resolve, reject) => {
+//     let b = Math.random()
+//     if (b < 0.5) {
+//         reject('no 2')
+//     }
+//     else {
+//         setTimeout(() => {
+//             console.log('done 2')
+//             resolve('ok 2')
+//         }, 2000);
+//     }
+// })
+// // prom3 = Promise.all([prom1, prom2])
+// // prom3=Promise.allSettled([prom1,prom2])
+// // prom3=Promise.race([prom1,prom2])
+// prom3=Promise.any([prom1,prom2])
+// prom3.then((a) => {
+//     console.log(a);
+// }).catch((err) => { console.log(err) })
 
+// async and await
+// async function getdata() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(453)
+//         }, 3500);
+//     })
+// }
+// async function getdata() {
+//     // simulating getting data from server
+//     // let x=await fetch('https://jsonplaceholder.typicode.com/todos/1')
+//     // let data = await x.text()
+//     let x=await fetch('https://jsonplaceholder.typicode.com/posts', {
+//                     method: 'POST',
+//                     body: JSON.stringify({
+//                         title: 'foo',
+//                         body: 'bar',
+//                         userId: 1,
+//                     }),
+//                     headers: {
+//                         'Content-type': 'application/json; charset=UTF-8',
+//                     },
+//                 })
+//     let data = await x.json()
+//     console.log(data);
+//     return 453
+// }
+// async function main() {
+//     console.log('loading');
+//     console.log('something else');
+//     console.log('load data');
+//     let data = await getdata();
+//     console.log(data);
+//     console.log('process data');
+//     console.log('task 2');
+// }
+// main()
+// data.then((v) => {
+//     console.log(data);
+//     console.log('process data');
+//     console.log('task 2');
+// })
 
+// catching errors
+// let a=prompt("enter a first number");
+// let b=prompt("enter a second number");
+// if (isNaN(a) ||  isNaN(b)) {
+//     throw SyntaxError('enter a number');
+// }
+// let sum=parseInt(a)+parseInt(b);
+// console.log(sum);
+// try {
+//     console.log(sum*x);
+    
+// } catch (error) {
+//     console.log('error');
+    
+// }
+// finally{
+//     console.log("files are closed");
+// }
 
+// object oriented programming
+// let obj={
+    // a:1,b:"hi"
+// }
+// console.log(obj);
+// let animal={"eats":true}
+// let rabbit={"jumps":true}
+// rabbit.__proto__=animal
+// class animal{
+//     constructor(name){
+//         this.name=name
+//         console.log('created');
+//     }
+//     eats(){console.log('eating');}
+//     jumps(){console.log('jumping');}
+// }
+// let a=new animal("bunny")
+// console.log(a);
+// class lion extends animal{
+//     constructor(name){
+//         super(name)
+//         console.log("lion is created")
+//     }
+//     eats(){
+//         super.eats()
+//         console.log('eating deer');}
 
-
-
-
-
-
-
-
-
-
+// }
+// let l=new lion("lion")
+// console.log(l);
+// console.log(l instanceof lion);
+// console.log(l instanceof animal);
+// console.log(a instanceof lion);
 
 
 
